@@ -71,7 +71,7 @@ class MainActivity : AppCompatActivity() {
 
         when {
             webview.canGoBack() -> webview.goBack()
-            cur - backBtnClicked <= 2000L -> super.onBackPressed()
+            cur - backBtnClicked <= BACK_BUTTON_GAP -> super.onBackPressed()
             else -> {
                 backBtnClicked = cur;
                 Toast.makeText(applicationContext, "한번 더 누르면 종료됩니다.", Toast.LENGTH_SHORT).show()
