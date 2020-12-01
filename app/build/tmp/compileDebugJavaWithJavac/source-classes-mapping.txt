@@ -1,0 +1,2 @@
+kr/khs/kkotgil/BuildConfig.java
+ kr.khs.kkotgil.BuildConfig

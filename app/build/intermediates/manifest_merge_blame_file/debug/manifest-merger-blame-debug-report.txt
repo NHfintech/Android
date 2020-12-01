@@ -1,0 +1,73 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="kr.khs.kkotgil"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:5:5-67
+11-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:5:22-64
+12
+13    <application
+13-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:7:5-31:19
+14        android:allowBackup="true"
+14-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:8:9-35
+15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+15-->[androidx.core:core:1.3.2] /Users/heeseungkim/.gradle/caches/transforms-2/files-2.1/80bb011650aac5452efa6d1fcdab7fb5/core-1.3.2/AndroidManifest.xml:24:18-86
+16        android:debuggable="true"
+17        android:extractNativeLibs="false"
+18        android:icon="@mipmap/ic_launcher"
+18-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:9:9-43
+19        android:label="@string/app_name"
+19-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:10:9-41
+20        android:networkSecurityConfig="@xml/network_security_config"
+20-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:11:9-69
+21        android:roundIcon="@mipmap/ic_launcher_round"
+21-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:12:9-54
+22        android:supportsRtl="true"
+22-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:13:9-35
+23        android:testOnly="true"
+24        android:theme="@style/Theme.KkotGil" >
+24-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:14:9-45
+25        <activity
+25-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:15:9-25:20
+26            android:name="kr.khs.kkotgil.SplashActivity"
+26-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:16:13-43
+27            android:configChanges="orientation|keyboardHidden|screenSize"
+27-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:17:13-74
+28            android:label="@string/title_activity_splash"
+28-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:18:13-58
+29            android:screenOrientation="portrait" >
+29-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:19:13-49
+30            <intent-filter>
+30-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:20:13-24:29
+31                <action android:name="android.intent.action.MAIN" />
+31-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:21:17-69
+31-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:21:25-66
+32
+33                <category android:name="android.intent.category.LAUNCHER" />
+33-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:23:17-77
+33-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:23:27-74
+34            </intent-filter>
+35        </activity>
+36        <activity
+36-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:26:9-30:39
+37            android:name="kr.khs.kkotgil.MainActivity"
+37-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:26:19-47
+38            android:excludeFromRecents="true"
+38-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:29:13-46
+39            android:launchMode="singleInstance"
+39-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:28:13-48
+40            android:screenOrientation="portrait"
+40-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:27:13-49
+41            android:taskAffinity="" />
+41-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:30:13-36
+42    </application>
+43
+44</manifest>
