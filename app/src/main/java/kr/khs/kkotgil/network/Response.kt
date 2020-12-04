@@ -1,4 +1,4 @@
-package kr.khs.nh2020.network
+package kr.khs.kkotgil.network
 
 data class Response(
     val result : Double,

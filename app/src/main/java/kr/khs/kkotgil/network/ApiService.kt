@@ -1,9 +1,7 @@
-package kr.khs.nh2020.network
+package kr.khs.kkotgil.network
 
 import android.util.Log
 import android.webkit.JavascriptInterface
-import com.google.android.gms.tasks.OnCompleteListener
-import com.google.firebase.messaging.FirebaseMessaging
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import kotlinx.coroutines.CoroutineScope
