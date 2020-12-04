@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">꽃 길</string>
-    <string name="title_activity_splash">FullscreenActivity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="default_notification_channel_id">fcm</string>
+    <string name="fcm_message">테스트 타이틀</string>
+    <string name="default_notification_channel_name">test channel name</string>
 </resources>
