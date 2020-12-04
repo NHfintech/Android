@@ -1,6 +1,7 @@
 package kr.khs.nh2020.network
 
 import android.util.Log
+import android.webkit.JavascriptInterface
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.messaging.FirebaseMessaging
 import com.squareup.moshi.Moshi
@@ -8,6 +9,7 @@ import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
+import kotlinx.coroutines.launch
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
@@ -28,9 +30,9 @@ private val moshi = Moshi.Builder()
     .build()
 
 interface NHApiService {
-    @Headers("Content-Type: application/x-www-form-urlencoded")
-    @POST("/users/:id/token")
-    suspend fun updateToken(@Path("id") id : Int, @Body user : TokenDTO) : Response
+    @Headers("Content-Type: application/json")
+    @PUT("/users/{id}/token")
+    suspend fun updateToken(@Path("id") id : Int, @Body token : TokenDTO) : Response
 }
 
 object NHApi {
@@ -46,22 +48,30 @@ object NHApi {
 }
 
 object RegisterToken {
-    val job = Job()
-    val coroutineScope = CoroutineScope(Dispatchers.Default + job)
+    var id = 1 // for test, default value is 0
+    var token : String? = null
+    private val job = Job()
+    private val coroutineScope = CoroutineScope(Dispatchers.Default + job)
 
     fun registerToken() {
-        fun getFirebaseToken() {
-            FirebaseMessaging.getInstance().token.addOnCompleteListener(OnCompleteListener { task ->
-                if (!task.isSuccessful) {
-                    Log.w("TAG", "Fetching FCM registration token failed", task.exception)
-                    return@OnCompleteListener
+        Log.d("Firebase", token ?: "null")
+        if(token != null && id != 0) {
+            coroutineScope.launch {
+                try {
+                    val result = NHApi.retrofitService.updateToken(id, TokenDTO(token!!))
+                    println(result.toString())
                 }
-
-                // Get new FCM registration token
-                val token = task.result
-
-                Log.d("Firebase", token ?: "")
-            })
+                catch (e : Throwable) {
+                    e.printStackTrace()
+                }
+            }
         }
+    }
+}
+
+class JSparser {
+    @JavascriptInterface
+    fun getUserId(id : Int) {
+        RegisterToken.id = id
     }
 }

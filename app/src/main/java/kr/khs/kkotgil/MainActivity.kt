@@ -9,18 +9,22 @@ import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.webkit.*
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.messaging.FirebaseMessaging
 import kotlinx.android.synthetic.main.activity_main.*
+import kr.khs.nh2020.network.JSparser
+import kr.khs.nh2020.network.RegisterToken
 
 class MainActivity : AppCompatActivity() {
 
     private val BACK_BUTTON_GAP = 2000L
     private var backBtnClicked = 0L
     private val homePage = "https://naver.com"
+//    private val homePage = "http://192.168.0.29:8080/"
 
     override fun onResume() {
         super.onResume()
@@ -33,6 +37,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         initFCM()
+        getFirebaseToken()
 
         webview.settings.apply {
             javaScriptEnabled = true // 자바스크립트 실행 허용
@@ -51,13 +56,16 @@ class MainActivity : AppCompatActivity() {
         webview.webViewClient = object : WebViewClient() {
             override fun shouldOverrideUrlLoading(view: WebView?, url: String?): Boolean {
                 view?.loadUrl(url!!)
-
+                backbtn.visibility = if(view?.canGoBack()!!) View.VISIBLE else View.GONE
                 return true
             }
         }
 
+        webview.addJavascriptInterface(JSparser(), "Android")
+
         homebtn.setOnClickListener {
             webview.loadUrl(homePage)
+//            RegisterToken.registerToken()
         }
 
         backbtn.setOnClickListener {
@@ -65,16 +73,6 @@ class MainActivity : AppCompatActivity() {
                 webview.goBack()
             else
                 Toast.makeText(applicationContext, "뒤로 갈 창이 없습니다.", Toast.LENGTH_SHORT).show()
-        }
-    }
-
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
-        Log.d("Firebase", "$requestCode $resultCode")
-        if(requestCode == 0) {
-            val requestUrl = data?.getStringExtra("url")!!
-            Log.d("Firebase", requestUrl)
-            webview.loadUrl(requestUrl)
         }
     }
 
@@ -89,6 +87,23 @@ class MainActivity : AppCompatActivity() {
                 channelName, NotificationManager.IMPORTANCE_HIGH)
             )
         }
+    }
+
+    private fun getFirebaseToken() {
+        FirebaseMessaging.getInstance().token.addOnCompleteListener(OnCompleteListener { task ->
+            if (!task.isSuccessful) {
+                Log.w("TAG", "Fetching FCM registration token failed", task.exception)
+                return@OnCompleteListener
+            }
+
+            // Get new FCM registration token
+            val token = task.result
+
+            RegisterToken.token = token
+
+            Log.d("Firebase", token ?: "no token")
+        })
+
     }
 
     class NHChromeClient(val context : Context) : WebChromeClient() {
