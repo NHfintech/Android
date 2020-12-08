@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sk/values-sk.xml",
+            "outputFile": "/Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sk/values-sk.xml",
             "map": [
                 {
                     "source": "/Users/heeseungkim/.gradle/caches/transforms-2/files-2.1/c7e8c130283da4a16508506635f46e23/jetified-play-services-basement-17.2.1/res/values-sk/values.xml",

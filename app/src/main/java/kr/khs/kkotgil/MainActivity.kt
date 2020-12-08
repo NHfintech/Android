@@ -16,15 +16,15 @@ import androidx.appcompat.app.AlertDialog
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.messaging.FirebaseMessaging
 import kotlinx.android.synthetic.main.activity_main.*
-import kr.khs.nh2020.network.JSparser
-import kr.khs.nh2020.network.RegisterToken
+import kr.khs.kkotgil.network.JSparser
+import kr.khs.kkotgil.network.RegisterToken
 
 class MainActivity : AppCompatActivity() {
 
     private val BACK_BUTTON_GAP = 2000L
     private var backBtnClicked = 0L
-    private val homePage = "https://naver.com"
-//    private val homePage = "http://192.168.0.29:8080/"
+//    private val homePage = "https://naver.com"
+    private val homePage = "http://192.168.0.9:8080"
 
     override fun onResume() {
         super.onResume()
@@ -56,7 +56,6 @@ class MainActivity : AppCompatActivity() {
         webview.webViewClient = object : WebViewClient() {
             override fun shouldOverrideUrlLoading(view: WebView?, url: String?): Boolean {
                 view?.loadUrl(url!!)
-                backbtn.visibility = if(view?.canGoBack()!!) View.VISIBLE else View.GONE
                 return true
             }
         }
@@ -64,16 +63,10 @@ class MainActivity : AppCompatActivity() {
         webview.addJavascriptInterface(JSparser(), "Android")
 
         homebtn.setOnClickListener {
-            webview.loadUrl(homePage)
-//            RegisterToken.registerToken()
+//            webview.loadUrl(homePage)
+            RegisterToken.registerToken()
         }
 
-        backbtn.setOnClickListener {
-            if(webview.canGoBack())
-                webview.goBack()
-            else
-                Toast.makeText(applicationContext, "뒤로 갈 창이 없습니다.", Toast.LENGTH_SHORT).show()
-        }
     }
 
     private fun initFCM() {
@@ -101,7 +94,7 @@ class MainActivity : AppCompatActivity() {
 
             RegisterToken.token = token
 
-            Log.d("Firebase", token ?: "no token")
+            Log.d("FirebaseToken", token ?: "no token")
         })
 
     }

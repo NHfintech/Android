@@ -14,7 +14,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 import retrofit2.http.*
 
-private const val BASE_URL = "http://192.168.0.29:3000/"
+private const val BASE_URL = "http://192.168.0.9:3000/"
 
 private val loggingInterceptor = HttpLoggingInterceptor().apply {
     level = HttpLoggingInterceptor.Level.BODY
@@ -52,7 +52,7 @@ object RegisterToken {
     private val coroutineScope = CoroutineScope(Dispatchers.Default + job)
 
     fun registerToken() {
-        Log.d("Firebase", token ?: "null")
+        Log.d("Firebase", "id : $id ${token ?: "null"}")
         if(token != null && id != 0) {
             coroutineScope.launch {
                 try {
@@ -65,11 +65,20 @@ object RegisterToken {
             }
         }
     }
+
+    fun registerToken(_token : String?) {
+        _token?.let {
+            token = it
+            registerToken()
+        }
+    }
 }
 
 class JSparser {
     @JavascriptInterface
     fun getUserId(id : Int) {
+        Log.d("WEB", "getUserId()")
         RegisterToken.id = id
+        RegisterToken.registerToken()
     }
 }

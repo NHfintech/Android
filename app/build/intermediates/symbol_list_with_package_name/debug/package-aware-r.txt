@@ -1713,7 +1713,6 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
-id backbtn
 id barrier
 id baseline
 id beginOnFirstDraw

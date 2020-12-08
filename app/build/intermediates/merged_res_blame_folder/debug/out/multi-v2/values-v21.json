@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
+            "outputFile": "/Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
             "map": [
                 {
                     "source": "/Users/heeseungkim/.gradle/caches/transforms-2/files-2.1/86b8749d2645f9d56b72c10bf64a434b/appcompat-1.2.0/res/values-v21/values-v21.xml",

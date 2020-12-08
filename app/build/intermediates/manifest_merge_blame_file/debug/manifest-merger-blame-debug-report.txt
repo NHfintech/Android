@@ -6,13 +6,13 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="24"
-8-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml
+8-->/Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="30" />
-9-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml
+9-->/Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:5:5-67
-11-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:5:22-64
+11-->/Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:5:5-67
+11-->/Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:5:22-64
 12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 12-->[com.google.firebase:firebase-iid:21.0.0] /Users/heeseungkim/.gradle/caches/transforms-2/files-2.1/bdcfa10cb64d459605708fbd51490bec/jetified-firebase-iid-21.0.0/AndroidManifest.xml:22:5-79
 12-->[com.google.firebase:firebase-iid:21.0.0] /Users/heeseungkim/.gradle/caches/transforms-2/files-2.1/bdcfa10cb64d459605708fbd51490bec/jetified-firebase-iid-21.0.0/AndroidManifest.xml:22:22-76
@@ -24,69 +24,69 @@
 14-->[com.google.firebase:firebase-iid:21.0.0] /Users/heeseungkim/.gradle/caches/transforms-2/files-2.1/bdcfa10cb64d459605708fbd51490bec/jetified-firebase-iid-21.0.0/AndroidManifest.xml:26:22-79
 15
 16    <application
-16-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:7:5-61:19
+16-->/Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:7:5-61:19
 17        android:allowBackup="true"
-17-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:8:9-35
+17-->/Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:8:9-35
 18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 18-->[androidx.core:core:1.3.2] /Users/heeseungkim/.gradle/caches/transforms-2/files-2.1/93c32b2495f5ad0d33d01d4a8e588e63/core-1.3.2/AndroidManifest.xml:24:18-86
 19        android:debuggable="true"
 20        android:extractNativeLibs="false"
 21        android:icon="@mipmap/ic_launcher"
-21-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:9:9-43
+21-->/Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:9:9-43
 22        android:label="@string/app_name"
-22-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:10:9-41
+22-->/Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:10:9-41
 23        android:networkSecurityConfig="@xml/network_security_config"
-23-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:11:9-69
+23-->/Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:11:9-69
 24        android:roundIcon="@mipmap/ic_launcher_round"
-24-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:12:9-54
+24-->/Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:12:9-54
 25        android:supportsRtl="true"
-25-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:13:9-35
+25-->/Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:13:9-35
 26        android:testOnly="true"
 27        android:theme="@style/Theme.KkotGil" >
-27-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:14:9-45
+27-->/Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:14:9-45
 28        <activity
-28-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:15:9-24:20
+28-->/Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:15:9-24:20
 29            android:name="kr.khs.kkotgil.SplashActivity"
-29-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:16:13-43
+29-->/Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:16:13-43
 30            android:configChanges="orientation|keyboardHidden|screenSize"
-30-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:17:13-74
+30-->/Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:17:13-74
 31            android:screenOrientation="portrait" >
-31-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:18:13-49
+31-->/Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:18:13-49
 32            <intent-filter>
-32-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:19:13-23:29
+32-->/Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:19:13-23:29
 33                <action android:name="android.intent.action.MAIN" />
-33-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:20:17-69
-33-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:20:25-66
+33-->/Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:20:17-69
+33-->/Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:20:25-66
 34
 35                <category android:name="android.intent.category.LAUNCHER" />
-35-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:22:17-77
-35-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:22:27-74
+35-->/Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:22:17-77
+35-->/Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:22:27-74
 36            </intent-filter>
 37        </activity>
 38        <activity
-38-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:25:9-29:39
+38-->/Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:25:9-29:39
 39            android:name="kr.khs.kkotgil.MainActivity"
-39-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:25:19-47
+39-->/Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:25:19-47
 40            android:excludeFromRecents="true"
-40-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:28:13-46
+40-->/Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:28:13-46
 41            android:launchMode="singleInstance"
-41-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:27:13-48
+41-->/Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:27:13-48
 42            android:screenOrientation="portrait"
-42-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:26:13-49
+42-->/Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:26:13-49
 43            android:taskAffinity="" />
-43-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:29:13-36
+43-->/Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:29:13-36
 44
 45        <service
-45-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:33:9-39:19
+45-->/Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:33:9-39:19
 46            android:name="kr.khs.kkotgil.firebase.MyFirebaseMessagingService"
-46-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:34:13-64
+46-->/Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:34:13-64
 47            android:exported="false" >
-47-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:35:13-37
+47-->/Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:35:13-37
 48            <intent-filter>
-48-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:36:13-38:29
+48-->/Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:36:13-38:29
 49                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-49-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:37:17-78
-49-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:37:25-75
+49-->/Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:37:17-78
+49-->/Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:37:25-75
 50            </intent-filter>
 51        </service>
 52
@@ -107,17 +107,17 @@
 67
 68        <!-- &lt;!&ndash;        토큰 자동 생성 방지 &ndash;&gt; -->
 69        <meta-data
-69-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:55:9-57:37
+69-->/Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:55:9-57:37
 70            android:name="firebase_messaging_auto_init_enabled"
-70-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:56:13-64
+70-->/Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:56:13-64
 71            android:value="false" />
-71-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:57:13-34
+71-->/Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:57:13-34
 72        <meta-data
-72-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:58:9-60:37
+72-->/Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:58:9-60:37
 73            android:name="firebase_analytics_collection_enabled"
-73-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:59:13-65
+73-->/Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:59:13-65
 74            android:value="false" />
-74-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:60:13-34
+74-->/Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:60:13-34
 75
 76        <service
 76-->[com.google.firebase:firebase-messaging-ktx:21.0.0] /Users/heeseungkim/.gradle/caches/transforms-2/files-2.1/d370fcc43fea2779d112d470ed4535de/jetified-firebase-messaging-ktx-21.0.0/AndroidManifest.xml:26:9-32:19
@@ -177,10 +177,10 @@
 106            android:exported="false" >
 106-->[com.google.firebase:firebase-messaging:21.0.0] /Users/heeseungkim/.gradle/caches/transforms-2/files-2.1/d133dcf9eed6fcfb5faf9bebe0f4570f/jetified-firebase-messaging-21.0.0/AndroidManifest.xml:31:13-37
 107            <intent-filter android:priority="-500" >
-107-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:36:13-38:29
+107-->/Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:36:13-38:29
 108                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-108-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:37:17-78
-108-->/Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:37:25-75
+108-->/Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:37:17-78
+108-->/Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:37:25-75
 109            </intent-filter>
 110        </service>
 111
