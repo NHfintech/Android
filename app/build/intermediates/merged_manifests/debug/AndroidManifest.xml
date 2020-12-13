@@ -40,7 +40,9 @@
             android:excludeFromRecents="true"
             android:launchMode="singleInstance"
             android:screenOrientation="portrait"
-            android:taskAffinity="" />
+            android:taskAffinity=""
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
 
         <service
             android:name="kr.khs.kkotgil.firebase.MyFirebaseMessagingService"

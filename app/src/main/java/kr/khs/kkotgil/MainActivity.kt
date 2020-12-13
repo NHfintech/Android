@@ -1,18 +1,17 @@
 package kr.khs.kkotgil
 
+import android.app.Activity
+import android.app.AlertDialog
 import android.app.NotificationChannel
 import android.app.NotificationManager
 import android.content.Context
 import android.content.DialogInterface
-import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.view.View
 import android.webkit.*
 import android.widget.Toast
-import androidx.appcompat.app.AlertDialog
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.messaging.FirebaseMessaging
 import kotlinx.android.synthetic.main.activity_main.*
@@ -24,7 +23,7 @@ class MainActivity : AppCompatActivity() {
     private val BACK_BUTTON_GAP = 2000L
     private var backBtnClicked = 0L
 //    private val homePage = "https://naver.com"
-    private val homePage = "http://192.168.0.9:8080"
+    private val homePage = "http://kkotgil.s3-website.ap-northeast-2.amazonaws.com"
 
     override fun onResume() {
         super.onResume()
@@ -42,16 +41,34 @@ class MainActivity : AppCompatActivity() {
         webview.settings.apply {
             javaScriptEnabled = true // 자바스크립트 실행 허용
             javaScriptCanOpenWindowsAutomatically = true // 자바스크립트에서 새창 실 행 허용
-            setSupportMultipleWindows(false) // 새 창 실행 허용
+            setSupportMultipleWindows(true) // 새 창 실행 허용
             loadWithOverviewMode = false // 메타 태그 허용
             useWideViewPort = true // 화면 사이즈 맞추기 허용
             setSupportZoom(false) // 화면 줌 허용
             builtInZoomControls = false // 화면 확대 축소 허용 여부
             cacheMode = WebSettings.LOAD_NO_CACHE // 브라우저 캐시 허용 여부
-            domStorageEnabled = false // 로컬저장소 허용
+            domStorageEnabled = true
         }
 
-        webview.webChromeClient = NHChromeClient(applicationContext)
+//        webview.webChromeClient = NHChromeClient(MainActivity.this)
+        webview.webChromeClient = object : WebChromeClient() {
+            override fun onJsAlert(
+            view: WebView?,
+            url: String?,
+            message: String?,
+            result: JsResult?
+        ): Boolean {
+            AlertDialog.Builder(this@MainActivity)
+                .setTitle("알림")
+                .setMessage(message)
+                .setPositiveButton(android.R.string.ok,
+                    DialogInterface.OnClickListener { dialogInterface, i ->
+                        result?.confirm()
+                    }).create().show()
+
+            return true
+        }
+        }
 
         webview.webViewClient = object : WebViewClient() {
             override fun shouldOverrideUrlLoading(view: WebView?, url: String?): Boolean {
@@ -63,8 +80,7 @@ class MainActivity : AppCompatActivity() {
         webview.addJavascriptInterface(JSparser(), "Android")
 
         homebtn.setOnClickListener {
-//            webview.loadUrl(homePage)
-            RegisterToken.registerToken()
+            webview.loadUrl(homePage)
         }
 
     }
@@ -99,14 +115,14 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    class NHChromeClient(val context : Context) : WebChromeClient() {
+    class NHChromeClient(val activity : Activity) : WebChromeClient() {
         override fun onJsAlert(
             view: WebView?,
             url: String?,
             message: String?,
             result: JsResult?
         ): Boolean {
-            AlertDialog.Builder(context)
+            AlertDialog.Builder(activity)
                 .setTitle("알림")
                 .setMessage(message)
                 .setPositiveButton(android.R.string.ok,

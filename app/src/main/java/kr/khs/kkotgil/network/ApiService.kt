@@ -14,7 +14,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 import retrofit2.http.*
 
-private const val BASE_URL = "http://192.168.0.9:3000/"
+private const val BASE_URL = "http://ec2-54-180-141-120.ap-northeast-2.compute.amazonaws.com:3000/"
 
 private val loggingInterceptor = HttpLoggingInterceptor().apply {
     level = HttpLoggingInterceptor.Level.BODY
