@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:2:1-64:12
-INJECTED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:2:1-64:12
-INJECTED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:2:1-64:12
-INJECTED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:2:1-64:12
+ADDED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:2:1-66:12
+INJECTED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:2:1-66:12
+INJECTED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:2:1-66:12
+INJECTED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:2:1-66:12
 MERGED from [androidx.core:core-ktx:1.3.2] /Users/heeseungkim/.gradle/caches/transforms-2/files-2.1/53bfd1da060e3ec17b314ba64fb7fd0e/jetified-core-ktx-1.3.2/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-messaging-ktx:21.0.0] /Users/heeseungkim/.gradle/caches/transforms-2/files-2.1/d370fcc43fea2779d112d470ed4535de/jetified-firebase-messaging-ktx-21.0.0/AndroidManifest.xml:17:1-35:12
 MERGED from [com.google.firebase:firebase-common-ktx:19.4.0] /Users/heeseungkim/.gradle/caches/transforms-2/files-2.1/701b40227626f8fc486fc0c6e2f5ff23/jetified-firebase-common-ktx-19.4.0/AndroidManifest.xml:2:1-21:12
@@ -57,25 +57,25 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/
 MERGED from [androidx.print:print:1.0.0] /Users/heeseungkim/.gradle/caches/transforms-2/files-2.1/c40ff8ee3bff76fdc73ae048b58390e7/print-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/heeseungkim/.gradle/caches/transforms-2/files-2.1/587fc452ebc29cbbaa9d78f9a18afc77/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.datatransport:transport-api:2.2.0] /Users/heeseungkim/.gradle/caches/transforms-2/files-2.1/015d023d97909372968ac4a62806d052/jetified-transport-api-2.2.0/AndroidManifest.xml:15:1-22:12
-INJECTED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:2:1-64:12
-INJECTED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:2:1-64:12
-INJECTED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:2:1-64:12
+INJECTED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:2:1-66:12
+INJECTED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:2:1-66:12
+INJECTED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:2:1-66:12
 	package
-		ADDED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:3:5-29
-		INJECTED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml
+		ADDED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:3:5-29
+		INJECTED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml
-		ADDED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:2:1-64:12
-		INJECTED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:2:1-66:12
+		INJECTED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml
-		ADDED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:2:1-64:12
-		INJECTED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:2:1-66:12
+		INJECTED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:5:5-67
+ADDED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:5:5-67
 MERGED from [com.google.firebase:firebase-iid:21.0.0] /Users/heeseungkim/.gradle/caches/transforms-2/files-2.1/bdcfa10cb64d459605708fbd51490bec/jetified-firebase-iid-21.0.0/AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-iid:21.0.0] /Users/heeseungkim/.gradle/caches/transforms-2/files-2.1/bdcfa10cb64d459605708fbd51490bec/jetified-firebase-iid-21.0.0/AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-installations:16.3.4] /Users/heeseungkim/.gradle/caches/transforms-2/files-2.1/610b198f550c0d48eef029cef57fa053/jetified-firebase-installations-16.3.4/AndroidManifest.xml:11:5-67
@@ -85,9 +85,9 @@ MERGED from [com.google.android.gms:play-services-cloud-messaging:16.0.0] /Users
 MERGED from [com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/heeseungkim/.gradle/caches/transforms-2/files-2.1/7a4f2a192bb8455c6ff71517f37b448c/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:26:5-67
 MERGED from [com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/heeseungkim/.gradle/caches/transforms-2/files-2.1/7a4f2a192bb8455c6ff71517f37b448c/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:26:5-67
 	android:name
-		ADDED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:5:22-64
+		ADDED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:5:22-64
 application
-ADDED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:7:5-61:19
+ADDED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:7:5-63:19
 MERGED from [com.google.firebase:firebase-messaging-ktx:21.0.0] /Users/heeseungkim/.gradle/caches/transforms-2/files-2.1/d370fcc43fea2779d112d470ed4535de/jetified-firebase-messaging-ktx-21.0.0/AndroidManifest.xml:25:5-33:19
 MERGED from [com.google.firebase:firebase-messaging-ktx:21.0.0] /Users/heeseungkim/.gradle/caches/transforms-2/files-2.1/d370fcc43fea2779d112d470ed4535de/jetified-firebase-messaging-ktx-21.0.0/AndroidManifest.xml:25:5-33:19
 MERGED from [com.google.firebase:firebase-common-ktx:19.4.0] /Users/heeseungkim/.gradle/caches/transforms-2/files-2.1/701b40227626f8fc486fc0c6e2f5ff23/jetified-firebase-common-ktx-19.4.0/AndroidManifest.xml:11:5-19:19
@@ -129,77 +129,81 @@ MERGED from [com.google.android.datatransport:transport-runtime:2.2.0] /Users/he
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.3.2] /Users/heeseungkim/.gradle/caches/transforms-2/files-2.1/93c32b2495f5ad0d33d01d4a8e588e63/core-1.3.2/AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:13:9-35
+		ADDED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:13:9-35
 	android:label
-		ADDED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:10:9-41
+		ADDED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:10:9-41
 	android:roundIcon
-		ADDED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:12:9-54
+		ADDED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:12:9-54
 	android:icon
-		ADDED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:9:9-43
+		ADDED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:9:9-43
 	android:allowBackup
-		ADDED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:8:9-35
+		ADDED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:8:9-35
 	android:theme
-		ADDED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:14:9-45
+		ADDED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:14:9-45
 	android:networkSecurityConfig
-		ADDED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:11:9-69
+		ADDED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:11:9-69
 activity#kr.khs.kkotgil.SplashActivity
-ADDED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:15:9-24:20
+ADDED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:15:9-24:20
 	android:screenOrientation
-		ADDED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:18:13-49
+		ADDED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:18:13-49
 	android:configChanges
-		ADDED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:17:13-74
+		ADDED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:17:13-74
 	android:name
-		ADDED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:16:13-43
+		ADDED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:16:13-43
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:19:13-23:29
+ADDED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:19:13-23:29
 action#android.intent.action.MAIN
-ADDED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:20:17-69
+ADDED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:20:17-69
 	android:name
-		ADDED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:20:25-66
+		ADDED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:20:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:22:17-77
+ADDED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:22:17-77
 	android:name
-		ADDED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:22:27-74
+		ADDED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:22:27-74
 activity#kr.khs.kkotgil.MainActivity
-ADDED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:25:9-29:39
+ADDED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:25:9-31:57
 	android:screenOrientation
-		ADDED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:26:13-49
+		ADDED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:26:13-49
 	android:excludeFromRecents
-		ADDED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:28:13-46
+		ADDED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:28:13-46
 	android:launchMode
-		ADDED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:27:13-48
+		ADDED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:27:13-48
+	android:windowSoftInputMode
+		ADDED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:31:13-55
+	android:theme
+		ADDED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:30:13-63
 	android:taskAffinity
-		ADDED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:29:13-36
+		ADDED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:29:13-36
 	android:name
-		ADDED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:25:19-47
+		ADDED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:25:19-47
 service#kr.khs.kkotgil.firebase.MyFirebaseMessagingService
-ADDED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:33:9-39:19
+ADDED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:35:9-41:19
 	android:exported
-		ADDED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:35:13-37
+		ADDED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:37:13-37
 	android:name
-		ADDED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:34:13-64
+		ADDED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:36:13-64
 intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
-ADDED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:36:13-38:29
+ADDED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:38:13-40:29
 action#com.google.firebase.MESSAGING_EVENT
-ADDED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:37:17-78
+ADDED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:39:17-78
 	android:name
-		ADDED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:37:25-75
+		ADDED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:39:25-75
 meta-data#firebase_messaging_auto_init_enabled
-ADDED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:55:9-57:37
+ADDED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:57:9-59:37
 	android:value
-		ADDED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:57:13-34
+		ADDED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:59:13-34
 	android:name
-		ADDED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:56:13-64
+		ADDED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:58:13-64
 meta-data#firebase_analytics_collection_enabled
-ADDED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:58:9-60:37
+ADDED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:60:9-62:37
 	android:value
-		ADDED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:60:13-34
+		ADDED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:62:13-34
 	android:name
-		ADDED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml:59:13-65
+		ADDED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml:61:13-65
 uses-sdk
-INJECTED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml
-INJECTED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml
+INJECTED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml
 MERGED from [androidx.core:core-ktx:1.3.2] /Users/heeseungkim/.gradle/caches/transforms-2/files-2.1/53bfd1da060e3ec17b314ba64fb7fd0e/jetified-core-ktx-1.3.2/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.core:core-ktx:1.3.2] /Users/heeseungkim/.gradle/caches/transforms-2/files-2.1/53bfd1da060e3ec17b314ba64fb7fd0e/jetified-core-ktx-1.3.2/AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-messaging-ktx:21.0.0] /Users/heeseungkim/.gradle/caches/transforms-2/files-2.1/d370fcc43fea2779d112d470ed4535de/jetified-firebase-messaging-ktx-21.0.0/AndroidManifest.xml:21:5-23:41
@@ -306,16 +310,16 @@ MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/heeseungk
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/heeseungkim/.gradle/caches/transforms-2/files-2.1/587fc452ebc29cbbaa9d78f9a18afc77/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.datatransport:transport-api:2.2.0] /Users/heeseungkim/.gradle/caches/transforms-2/files-2.1/015d023d97909372968ac4a62806d052/jetified-transport-api-2.2.0/AndroidManifest.xml:18:5-20:41
 MERGED from [com.google.android.datatransport:transport-api:2.2.0] /Users/heeseungkim/.gradle/caches/transforms-2/files-2.1/015d023d97909372968ac4a62806d052/jetified-transport-api-2.2.0/AndroidManifest.xml:18:5-20:41
-INJECTED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml
-INJECTED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml
+INJECTED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml
-		ADDED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml
-		ADDED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/heeseungkim/AndroidStudioProjects/KkotGil/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/heeseungkim/AndroidStudioProjects/kkotgil_android/app/src/main/AndroidManifest.xml
 service#com.google.firebase.components.ComponentDiscoveryService
 ADDED from [com.google.firebase:firebase-messaging-ktx:21.0.0] /Users/heeseungkim/.gradle/caches/transforms-2/files-2.1/d370fcc43fea2779d112d470ed4535de/jetified-firebase-messaging-ktx-21.0.0/AndroidManifest.xml:26:9-32:19
 MERGED from [com.google.firebase:firebase-common-ktx:19.4.0] /Users/heeseungkim/.gradle/caches/transforms-2/files-2.1/701b40227626f8fc486fc0c6e2f5ff23/jetified-firebase-common-ktx-19.4.0/AndroidManifest.xml:12:9-18:19

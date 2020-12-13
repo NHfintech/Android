@@ -1,20 +1,20 @@
-package kr.khs.nh2020.network
+package kr.khs.kkotgil.network
 
 import android.util.Log
-import com.google.android.gms.tasks.OnCompleteListener
-import com.google.firebase.messaging.FirebaseMessaging
+import android.webkit.JavascriptInterface
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
+import kotlinx.coroutines.launch
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 import retrofit2.http.*
 
-private const val BASE_URL = "http://192.168.0.29:3000/"
+private const val BASE_URL = "http://ec2-54-180-141-120.ap-northeast-2.compute.amazonaws.com:3000/"
 
 private val loggingInterceptor = HttpLoggingInterceptor().apply {
     level = HttpLoggingInterceptor.Level.BODY
@@ -28,9 +28,9 @@ private val moshi = Moshi.Builder()
     .build()
 
 interface NHApiService {
-    @Headers("Content-Type: application/x-www-form-urlencoded")
-    @POST("/users/:id/token")
-    suspend fun updateToken(@Path("id") id : Int, @Body user : TokenDTO) : Response
+    @Headers("Content-Type: application/json")
+    @PUT("/users/{id}/token")
+    suspend fun updateToken(@Path("id") id : Int, @Body token : TokenDTO) : Response
 }
 
 object NHApi {
@@ -46,22 +46,39 @@ object NHApi {
 }
 
 object RegisterToken {
-    val job = Job()
-    val coroutineScope = CoroutineScope(Dispatchers.Default + job)
+    var id = 1 // for test, default value is 0
+    var token : String? = null
+    private val job = Job()
+    private val coroutineScope = CoroutineScope(Dispatchers.Default + job)
 
     fun registerToken() {
-        fun getFirebaseToken() {
-            FirebaseMessaging.getInstance().token.addOnCompleteListener(OnCompleteListener { task ->
-                if (!task.isSuccessful) {
-                    Log.w("TAG", "Fetching FCM registration token failed", task.exception)
-                    return@OnCompleteListener
+        Log.d("Firebase", "id : $id ${token ?: "null"}")
+        if(token != null && id != 0) {
+            coroutineScope.launch {
+                try {
+                    val result = NHApi.retrofitService.updateToken(id, TokenDTO(token!!))
+                    println(result.toString())
                 }
-
-                // Get new FCM registration token
-                val token = task.result
-
-                Log.d("Firebase", token ?: "")
-            })
+                catch (e : Throwable) {
+                    e.printStackTrace()
+                }
+            }
         }
+    }
+
+    fun registerToken(_token : String?) {
+        _token?.let {
+            token = it
+            registerToken()
+        }
+    }
+}
+
+class JSparser {
+    @JavascriptInterface
+    fun getUserId(id : Int) {
+        Log.d("WEB", "getUserId()")
+        RegisterToken.id = id
+        RegisterToken.registerToken()
     }
 }

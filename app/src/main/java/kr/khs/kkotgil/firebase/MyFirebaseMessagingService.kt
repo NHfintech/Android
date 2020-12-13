@@ -16,6 +16,7 @@ import com.google.firebase.messaging.FirebaseMessagingService
 import com.google.firebase.messaging.RemoteMessage
 import kr.khs.kkotgil.MainActivity
 import kr.khs.kkotgil.R
+import kr.khs.kkotgil.network.RegisterToken
 
 class   MyFirebaseMessagingService : FirebaseMessagingService() {
     private val TAG = "FirebaseLog"
@@ -57,7 +58,7 @@ class   MyFirebaseMessagingService : FirebaseMessagingService() {
     }
 
     private fun sendRegistrationToServer(token: String?) {
-
+        RegisterToken.registerToken(token)
     }
 
     private fun sendNotification(messageTitle : String, messageBody: String, messageLink : String) {
